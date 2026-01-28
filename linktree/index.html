@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links</title>
+    <link rel="stylesheet" href="styletree.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/Logotipo.png" alt="Logotipo" class="profile">
+        <h1>Luís Contreiras</h1>
+        <p class="subtitle" id="typing-text">Bem vindo ao meu Linktree!</p>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-code"></i> <a href="https://luiscontreiras.github.io/Meu-Portfolio/" target="_blank"> Portfólio</a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5567992275161" target="_blank"> Whatsapp</a>
+        </div>
+        <div class="contact-item"><i class="fas fa-envelope"></i> <a
+                href="mailto:contreiras1308@gmail.com">E-mail</a></div>
+        <div class="contact-item"><i class="fab fa-linkedin"></i> <a
+                href="https://www.linkedin.com/in/luís-gabriel-contreiras-6002b6381" target="_blank">LinkedIn</a></div>
+        <div class="contact-item"><i class="fab fa-github"></i><a href="https://github.com/LuisContreiras"
+                target="_blank">GitHub</a></div>
+
+
+
+        <footer>
+            <div class="footer-content">
+                <h6> &copy; 2026 - Feito por Luís Gabriel Contreiras</h6>
+            </div>
+        </footer>
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const textElement = document.getElementById("typing-text");
+    const textToType = "Bem vindo ao meu Linktree!";
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        if (!textElement) return;
+
+        if (isDeleting) {
+            textElement.textContent = textToType.substring(0, index - 1);
+            index--;
+        } else {
+            textElement.textContent = textToType.substring(0, index + 1);
+            index++;
+        }
+
+        let typingSpeed = isDeleting ? 80 : 120;
+
+        if (!isDeleting && index === textToType.length) {
+            isDeleting = true;
+            typingSpeed = 2000;
+        } else if (isDeleting && index === 0) {
+            isDeleting = false;
+            typingSpeed = 600;
+        }
+
+        setTimeout(typeEffect, typingSpeed);
+    }
+
+    setTimeout(typeEffect, 800);
+});
+
+
+        </script>
+
+</body>
+
+</html>
