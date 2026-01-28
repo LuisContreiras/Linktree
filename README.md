@@ -71,20 +71,17 @@ Garantindo uma boa experiência em qualquer dispositivo.
 
 ---
 
-
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Luís Gabriel Contreiras** 
-
----
-
 ## ⭐ Contribuição
 
 Se curtir o projeto:
 
 * ⭐ Dê uma estrela no repositório
 * 🛠️ Sugestões e melhorias são bem-vindas
+
+---
+## Autor
+
+Desenvolvido por **Luís Gabriel Contreiras** 
 
 ---
 
