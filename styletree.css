@@ -1,0 +1,108 @@
+:root{
+    --primary-color: #ff230b;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #ffffff;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background: #121212;
+    color:var(--text-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #ff230b;
+   text-shadow:  0 10px 40px rgba(243, 50, 24, 0.6);
+}
+.container{
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    min-width: 80px;
+    width: 350px;
+    height: 610px;
+}
+.profile{
+    margin-top: 70px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(227, 32, 10, 0.5);
+    box-shadow: 0 0 40px rgba(255, 35, 11, 0.6);
+    animation: flutuar 4s ease-in-out infinite;
+}
+@keyframes flutuar{
+     0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.contact-item{
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 40px;
+    background-color: #121212;
+    cursor: pointer;
+}
+.contact-item:hover{ 
+    transform: translateY(1.5px);
+    box-shadow: 0 0px 20px rgba(255, 14, 14, 0.5);
+}
+.contact-item i{
+    position: flex;
+    align-items: center;
+
+}
+.contact-item a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.subtitle{
+    min-height: 1.4em;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+footer h6{
+    margin-top: 80px;
+    margin-bottom: 1px;
+    color: #b0afaf;
+
+}
+
+@media screen and (max-width:360px){
+    
+    .container{
+        display: inline-block;
+        margin: 15px;
+        height: 90%;
+        width: 80%;
+    }
+
+    footer h6{
+    margin-top: 30px;
+    margin-bottom: 1px
+}
+
+}
